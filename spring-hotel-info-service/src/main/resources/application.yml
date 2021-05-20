@@ -1,0 +1,8 @@
+server:
+  port: 9095
+  
+spring:  application:    name: hotel-info
+    
+  config:
+    import: configserver:http://localhost:8888   
+    
