@@ -21,20 +21,20 @@ public class SpringHotelInfoServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringHotelInfoServiceApplication.class, args);
 	}
-	@Bean
-	public CommandLineRunner runner() {
-		
-		return new CommandLineRunner() {
-		
-			@Autowired
-			InfoHotelRepository repo;
-		
-			@Override
-			public void run(String... args) throws Exception {
-			MenuType menu= new MenuType("South_Indian","North-Indian","continental","Chinese");
-			InfoHotel hotel=new InfoHotel(101,"SaravanaBhavan","100feet road","sb@gmail.com", menu,"Alldays");
-			repo.save(hotel);
-			}
-		};
+//	@Bean
+//	public CommandLineRunner runner() {
+//		
+//		return new CommandLineRunner() {
+//		
+//			@Autowired
+//			InfoHotelRepository repo;
+//		
+//			@Override
+//			public void run(String... args) throws Exception {
+//			MenuType menu= new MenuType("South_Indian","North-Indian","continental","Chinese");
+//			InfoHotel hotel=new InfoHotel(101,"SaravanaBhavan","100feet road","sb@gmail.com", menu,"Alldays");
+//			repo.save(hotel);
+//			}
+//		};
 	}
-}
+//}

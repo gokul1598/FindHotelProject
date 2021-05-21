@@ -1,0 +1,10 @@
+server:
+  port: 8085
+  
+spring:
+  application:
+    name: hotel-reservation
+    
+  config:
+    import: configserver:http://localhost:8888 
+     

@@ -33,7 +33,7 @@ public class InfoController {
 	}  
 	  
 	@GetMapping(path="/hotels")
-	public List<InfoHotel> findAll(){
+	public List<InfoHotel> findAll() {
 		return this.service.findAll();
 }
 	
