@@ -1,0 +1,9 @@
+server:
+  port: 7075
+  
+spring:
+  application:
+    name: hotel-review
+    
+  config:
+    import: configserver:http://localhost:8888 

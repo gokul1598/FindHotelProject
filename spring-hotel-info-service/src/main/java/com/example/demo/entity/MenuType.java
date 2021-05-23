@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "Hotel")
+@Document(collection = "Menu")
 public class MenuType {
    private String menu1;
    private String menu2;

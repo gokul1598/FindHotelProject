@@ -29,4 +29,18 @@ public class InfoHotelService {
 	 public List<InfoHotel> findByServiceArea(String serviceArea){
 		 return this.repo.findByServiceArea(serviceArea);
 	 }
+
+
+	public List<InfoHotel> deleteByName(String name) {
+		return this.repo.deleteByName(name);
+	}
+	 public List<InfoHotel> findByServiceAreaAndName(String serviceArea,String name){
+		 return this.repo.findByServiceAreaAndName(serviceArea,name);
+	 }
+
+	public List<InfoHotel> findByServiceAreaAndMenuType(String serviceArea, String menu1) {
+		return this.repo.findByServiceAreaAndMenuType(serviceArea,menu1);
+	}
+	
+
 } 
